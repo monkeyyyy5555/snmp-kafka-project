@@ -1,0 +1,38 @@
+[
+  {
+    "name": "Cloud1",
+    "console_host": "192.168.174.128",
+    "console": null,
+    "status": "started"
+  },
+  {
+    "name": "Switch1",
+    "console_host": "192.168.174.128",
+    "console": 5001,
+    "status": "started"
+  },
+  {
+    "name": "R1",
+    "console_host": "192.168.174.128",
+    "console": 5002,
+    "status": "started"
+  },
+  {
+    "name": "R2",
+    "console_host": "192.168.174.128",
+    "console": 5003,
+    "status": "started"
+  },
+  {
+    "name": "ipterm-1",
+    "console_host": "192.168.174.128",
+    "console": 5004,
+    "status": "started"
+  },
+  {
+    "name": "ipterm-2",
+    "console_host": "192.168.174.128",
+    "console": 5006,
+    "status": "started"
+  }
+]

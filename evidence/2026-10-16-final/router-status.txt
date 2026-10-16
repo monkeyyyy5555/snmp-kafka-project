@@ -1,0 +1,43 @@
+show ip interface brief
+Interface              IP-Address      OK? Method Status                Protocol
+FastEthernet0/0        192.168.159.131 YES DHCP   up                    up      
+FastEthernet1/0        10.12.0.1       YES NVRAM  up                    up      
+FastEthernet1/1        172.16.0.1      YES NVRAM  up                    up      
+R1#
+show ip ospf neighbor
+
+Neighbor ID     Pri   State           Dead Time   Address         Interface
+10.12.0.2         1   FULL/DR         00:00:38    10.12.0.2       FastEthernet1/0
+R1#
+show snmp mib ifmib ifindex
+FastEthernet1/1: Ifindex = 3
+Null0: Ifindex = 4
+FastEthernet1/0: Ifindex = 2
+FastEthernet0/0: Ifindex = 1
+R1#
+show access-lists SNMP-COLLECTOR
+Standard IP access list SNMP-COLLECTOR
+    10 permit 192.168.159.128 (18 matches)
+R1#
+show ip interface brief
+Interface              IP-Address      OK? Method Status                Protocol
+FastEthernet0/0        192.168.159.130 YES DHCP   up                    up      
+FastEthernet1/0        10.12.0.2       YES NVRAM  up                    up      
+FastEthernet1/1        172.16.1.1      YES NVRAM  up                    up      
+R2#
+show ip ospf neighbor
+
+Neighbor ID     Pri   State           Dead Time   Address         Interface
+10.12.0.1         1   FULL/BDR        00:00:32    10.12.0.1       FastEthernet1/0
+R2#
+show snmp mib ifmib ifindex
+FastEthernet1/1: Ifindex = 3
+Null0: Ifindex = 4
+FastEthernet1/0: Ifindex = 2
+FastEthernet0/0: Ifindex = 1
+R2#
+show access-lists SNMP-COLLECTOR
+Standard IP access list SNMP-COLLECTOR
+    10 permit 192.168.159.128 (18 matches)
+R2#
+

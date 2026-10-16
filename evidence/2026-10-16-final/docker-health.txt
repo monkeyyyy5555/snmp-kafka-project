@@ -1,0 +1,2 @@
+lab-kafka-python-kafka-ui-1 Up 13 minutes
+lab-kafka-python-kafka-1 Up 13 minutes (healthy)

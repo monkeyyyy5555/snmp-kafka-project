@@ -1,0 +1,27 @@
+ipterm-1
+ping -c 4 -s 1000 -W 2 172.16.1.10; echo PING_EXIT=$?
+[?2004lPING 172.16.1.10 (172.16.1.10) 1000(1028) bytes of data.
+1008 bytes from 172.16.1.10: icmp_seq=1 ttl=62 time=41.0 ms
+1008 bytes from 172.16.1.10: icmp_seq=2 ttl=62 time=44.3 ms
+1008 bytes from 172.16.1.10: icmp_seq=3 ttl=62 time=30.7 ms
+1008 bytes from 172.16.1.10: icmp_seq=4 ttl=62 time=35.7 ms
+
+--- 172.16.1.10 ping statistics ---
+4 packets transmitted, 4 received, 0% packet loss, time 3005ms
+rtt min/avg/max/mdev = 30.676/37.928/44.309/5.195 ms
+PING_EXIT=0
+[?2004hroot@ipterm-1:~# 
+ipterm-2
+ping -c 4 -s 1000 -W 2 172.16.0.10; echo PING_EXIT=$?
+[?2004lPING 172.16.0.10 (172.16.0.10) 1000(1028) bytes of data.
+1008 bytes from 172.16.0.10: icmp_seq=1 ttl=62 time=32.1 ms
+1008 bytes from 172.16.0.10: icmp_seq=2 ttl=62 time=38.3 ms
+1008 bytes from 172.16.0.10: icmp_seq=3 ttl=62 time=34.5 ms
+1008 bytes from 172.16.0.10: icmp_seq=4 ttl=62 time=39.7 ms
+
+--- 172.16.0.10 ping statistics ---
+4 packets transmitted, 4 received, 0% packet loss, time 3005ms
+rtt min/avg/max/mdev = 32.058/36.131/39.676/3.019 ms
+PING_EXIT=0
+[?2004hroot@ipterm-2:~# 
+

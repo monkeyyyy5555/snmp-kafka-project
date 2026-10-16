@@ -1,0 +1,28 @@
+# Secrets and credentials
+.env
+.env.*
+!.env.example
+*credentials*
+*secret*
+*.pem
+*.key
+*.p12
+*.pfx
+id_rsa*
+id_ed25519*
+.ssh/
+# Runtime / generated files
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+*.log
+*.zip
+# Historical packaging material (not current submission)
+PERSISTENCE.md
+SUBMISSION_CHECKLIST.md
+submission-files.txt
+# Prior incomplete screenshot
+evidence/**/gns3-partial-view.png
+EVIDENCE.md

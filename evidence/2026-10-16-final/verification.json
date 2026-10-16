@@ -1,0 +1,47 @@
+{
+  "messages": 16,
+  "routers": [
+    "192.168.159.131",
+    "192.168.159.130"
+  ],
+  "partition": 0,
+  "offsets": [
+    14,
+    29
+  ],
+  "end_offset": 30,
+  "exact_producer_consumer_match": true,
+  "both_test_processes_exited": true,
+  "topic": [
+    {
+      "error_code": 0,
+      "topic": "snmp",
+      "is_internal": false,
+      "partitions": [
+        {
+          "error_code": 0,
+          "partition": 0,
+          "leader": 1,
+          "leader_epoch": 4,
+          "replicas": [
+            1
+          ],
+          "isr": [
+            1
+          ],
+          "offline_replicas": []
+        }
+      ],
+      "authorized_operations": [
+        "READ",
+        "WRITE",
+        "CREATE",
+        "DELETE",
+        "ALTER",
+        "DESCRIBE",
+        "DESCRIBE_CONFIGS",
+        "ALTER_CONFIGS"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+REPLAYED EVIDENCE — NOT A LIVE TEST
+Original test: 16 October 2026, 15:36:27–15:37:02 Asia/Bangkok
+
+collector.jsonl — last two recorded events
+{
+  "event": {
+    "timestamp": "2026-10-16T08:37:02.125324+00:00",
+    "router_ip": "192.168.159.130",
+    "interface": "FastEthernet1/1",
+    "if_index": 3,
+    "in_octets": 10128,
+    "out_octets": 19579,
+    "in_mbps": 0.006674063,
+    "out_mbps": 0.006770138
+  },
+  "partition": 0,
+  "offset": 28
+}
+{
+  "event": {
+    "timestamp": "2026-10-16T08:37:02.126207+00:00",
+    "router_ip": "192.168.159.131",
+    "interface": "FastEthernet1/1",
+    "if_index": 3,
+    "in_octets": 10086,
+    "out_octets": 19519,
+    "in_mbps": 0.00667461,
+    "out_mbps": 0.006770694
+  },
+  "partition": 0,
+  "offset": 29
+}
+consumer.jsonl — last two recorded events
+{
+  "event": {
+    "timestamp": "2026-10-16T08:37:02.125324+00:00",
+    "router_ip": "192.168.159.130",
+    "interface": "FastEthernet1/1",
+    "if_index": 3,
+    "in_octets": 10128,
+    "out_octets": 19579,
+    "in_mbps": 0.006674063,
+    "out_mbps": 0.006770138
+  },
+  "partition": 0,
+  "offset": 28
+}
+{
+  "event": {
+    "timestamp": "2026-10-16T08:37:02.126207+00:00",
+    "router_ip": "192.168.159.131",
+    "interface": "FastEthernet1/1",
+    "if_index": 3,
+    "in_octets": 10086,
+    "out_octets": 19519,
+    "in_mbps": 0.00667461,
+    "out_mbps": 0.006770694
+  },
+  "partition": 0,
+  "offset": 29
+}
